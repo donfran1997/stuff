@@ -1,15 +1,16 @@
 package main
-//
-//#cgo CFLAGS: -fplugin=./trust.so
-//
-//void test() {
-//    printf("Hello World");
-//}
-//
-//
+
+/*
+#cgo CFLAGS: -fplugin=./trust.so
+
+void echo() {
+	printf("RWAR");
+}
+  */
+
 import "C"
 
 func main() {
-	C.test()
+	C.echo()
 	return
 }
