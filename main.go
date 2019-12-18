@@ -8,6 +8,7 @@ void helloWorld() {
 */
 
 import "C"
+import "unsafe"
 
 func main() {
 	C.helloWorld()
